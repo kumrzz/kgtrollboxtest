@@ -1,0 +1,7 @@
+<%= form_for :troll, url: trolls_path do |f| %>
+  <p>
+    <%= f.text_field :username, :value=>"kumR" %>
+    <%= f.text_field :troll, :value=>"", :size=>"80x1" %>
+    <%= f.submit %>
+  </p>
+<% end %>

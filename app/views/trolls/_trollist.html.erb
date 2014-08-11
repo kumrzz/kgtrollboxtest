@@ -1,0 +1,16 @@
+<div id="TrollBox" style="width:95%;height:100px;overflow:auto;text-align:left;border:1px dotted;scrollTop=200px;">  
+ <table>
+       <% @trolls.each do |troll| %>
+   <tr>
+     <td><%= '['+ troll.created_at.to_formatted_s(:short) +']' %>
+         <%= troll.username %>
+         <%= troll.troll %></td>
+    </tr>
+   <% end %>
+ 
+ </table>
+</div>
+
+<script>
+$(document).ready(function() {document.getElementById("TrollBox").scrollTop = 10000;});
+</script>
