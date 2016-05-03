@@ -1,1 +1,1 @@
-RoR trolllbox work for basic chat
+RoR trollbox app work for basic chat
